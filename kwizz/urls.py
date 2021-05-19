@@ -15,9 +15,9 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from helloThu.views import myView
+from kwizz.views import index
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('helloThu/', myView)
+    path('kwizz', index)
 ]
