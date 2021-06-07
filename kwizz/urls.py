@@ -16,8 +16,9 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from kwizz.views import index
-
+from kwizz.views import contact
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('kwizz', index)
+    path('kwizz', index),
+    path('contact', contact),
 ]
