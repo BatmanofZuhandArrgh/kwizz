@@ -31,13 +31,14 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
-    'django.contrib.admin',
-    'django.contrib.auth',
-    'django.contrib.contenttypes',
-    'django.contrib.sessions',
-    'django.contrib.messages',
-    'django.contrib.staticfiles',
-    'kwizz'
+    'django.contrib.admin', #admin site
+    'django.contrib.auth',  #authentication system
+    'django.contrib.contenttypes', # a framework for content types
+    'django.contrib.sessions', #a session framework
+    'django.contrib.messages', #a message framework
+    'django.contrib.staticfiles', #a framework for managing static files
+    'kwizz', #Main 
+    'calcu.apps.CalcuConfig', #temp app to develop backend
 ]
 
 MIDDLEWARE = [
