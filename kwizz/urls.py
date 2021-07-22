@@ -17,8 +17,10 @@ from django.contrib import admin
 from django.urls import path
 from kwizz.views import index
 from kwizz.views import contact
+from kwizz.views import quiz
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('kwizz', index),
     path('contact', contact),
+    path ('quiz', quiz),
 ]
